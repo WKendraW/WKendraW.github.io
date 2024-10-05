@@ -35,7 +35,7 @@ body {
 #footer ul {list-style-type:none;}
 #header img {width:10em;
     margin-top:1.5em}
-.main-image {background-image:url(file:///Users/kendrawong/Desktop/Web%20Design/Assignment%203/images/sabrina-main-image.jpg);
+.main-image {background-image:url(../images/sabrina-main-image.jpg);
 height: 40em; max-width:100%;background-size: cover;background-position:center}
 
 #nav, #footer {
