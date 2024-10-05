@@ -1,0 +1,188 @@
+/*I ordered my CSS code structure using the hierarchy of my website. For example, all my code for the merchandise section is together.*/
+/*Within each section, I've also ordered the code alphabetically, and from more broad to more specific.*/
+* {
+    font-family: Merriweather;
+    color: #665544;
+    text-align: center;} /* universal selector*/
+a {text-decoration:none}
+body {
+    width: 100%;
+    margin: 0 auto;}
+#content {
+    overflow: auto;
+    }
+
+
+/*three columns with content*/
+.column1, .column2, .column3 {
+    width: 30.5%;
+    margin: 1em;}
+.column3 {
+    margin-right: 0%;}
+.small-height{
+    height: 13em;
+    padding: .3em;
+    width:100%;
+    margin-bottom: 1em;
+    background-color:rgb(225, 225, 212);
+    text-align: left;
+    border-radius: .2em}
+
+/*logo, main image, nav, and footer*/
+.foot1, .foot2 {display: inline-block; text-align: left;}
+.foot1 li {text-align: left;}
+.foot2 li {margin-right: 3em; text-align: left}
+#footer ul {list-style-type:none;}
+#header img {width:10em;
+    margin-top:1.5em}
+.main-image {background-image:url(file:///Users/kendrawong/Desktop/Web%20Design/Assignment%203/images/sabrina-main-image.jpg);
+height: 40em; max-width:100%;background-size: cover;background-position:center}
+
+#nav, #footer {
+    background-color: rgb(225, 225, 212);
+    padding: 0.5em 0;}
+#nav, #footer {
+    margin: 1%;}
+#nav li {
+    display: inline;
+    padding: 0.5em;}
+
+
+/*short n sweet section*/
+
+h4 {background-color:rgb(185, 0, 0);
+    color:rgb(255, 255, 255);
+    border-radius: .2em;
+    font-family: Open Sans;
+    padding: .8em;
+    margin:0 auto;
+    text-align: center;
+    width: 6.8em;
+}
+.short-n-sweet {
+    height: 12em;
+    margin-bottom: 1em;}
+.short-n-sweet h4 {background-color:rgb(185, 0, 0);
+    color:rgb(255, 255, 255);
+    font-family: Open Sans;
+    border-radius: .2em;
+    padding: .7em;
+    margin:0 auto;
+    text-align: center;
+    width: 13em;
+} 
+.short-n-sweet h1 {font-size: 2em}
+.small-height * {text-align: left;
+    margin-left: 2em}
+.small-height h1 {margin-left: 1.2em; margin-top: 1.5em}
+
+/*merch section*/
+#merchandise {width:100%}
+#merchandise img {
+    height: 23em;
+    max-width: 100%;
+    object-fit: cover;
+    margin-top: -2.8em} /*id selector*/
+.merch1, .merch2, .merch3 {
+    width: 30%;
+    height: auto;
+    float: left;
+    overflow:hidden;
+    margin: 1%;}
+.merch3 {
+    margin-right: 0%;}
+h3 {background-color:rgb(185, 0, 0);
+    color:rgb(255, 255, 255);
+    border-radius: .2em;
+    font-family: Open Sans;
+    padding: .8em;
+    margin:0 auto;
+    text-align: center;
+    display: inline-block;
+    width: 6.8em;
+}  /* type selector*/
+
+/**concerts**/
+.concert-col{width: 90%;
+    height: 7em;
+    margin: 0 auto;
+    margin-top:3em;
+    margin-bottom: 1em;
+    background-color:rgb(225, 225, 212);
+    } /* class selector*/
+.concert-col h2 {text-align:left; margin-left: 1em; 
+    margin-top: .3em;
+    margin-bottom:.3em
+    } 
+.concert-col p {text-align:left; margin-left: 1.5em;margin-top: .3em;
+    margin-bottom:.3em
+    }
+h2 ~ p {font-size:1.1em} /*general sibling selector*/
+table {max-width:100%}
+td {padding: 7px 10px 10px 10px;}
+td h4 {text-align: right; margin-right: 2em;
+    background-color:rgb(185, 0, 0);
+    color:rgb(255, 255, 255);
+    border-radius: .2em;
+    font-family: Open Sans;
+    padding: .8em;
+    margin:0 auto;
+    text-align: center;
+    width: 6.8em;
+}/*descendent selector*/
+tr.odd {background-color:rgb(231, 231, 219)}
+tr.even {background-color:rgb(206, 206, 184)}
+
+/*follow for notification*/
+.notifs {text-align: center}
+.notifs h3 {width: 13em;}
+.notifs h2 {font-size:1.5em; margin-top: 2em}
+
+/*media queries*/
+/*desktop and large screens*/
+@media screen and (min-width:1000px)
+    { .column1, .column2, .column3 {/*three columns on large screens*/
+        width: 30.3%;
+        margin-top:2em;
+        float: left;
+        margin: 1%;}
+        .column3 {
+            margin-right: 0%;}
+        .merch1, .merch2, .merch3 {
+        width: 30%;
+        height: auto;
+        float: left;
+        overflow:hidden;
+        margin: 1%;}
+    }  
+
+/*tablets and medium size screens*/
+@media screen and (min-width: 768px) and (max-width:999px){
+    .column1, .column2, .column3 {/*each .column takes its own row*/
+        width:92%; margin:3%; margin-top:1em}
+    .merch1, .merch2, .merch3 {
+        width: 30%;
+        height: auto;
+        float: left;
+        overflow:hidden;
+        margin: 1%;}
+    }
+    h1 {font-size: 1.5em;}
+    .heading {width: 100%; float:left; text-align:center; margin-top:2em}
+
+/*phones and small screens*/
+ @media screen and (max-width: 767px) {
+    .column1, .column2, .column3 {width:92%; margin:3%; margin-top:1em}
+    .heading {width: 100%; float:left; margin-top:2em}
+    .merch1, .merch2, .merch3 {
+    width: 98%;
+    height: auto;
+    overflow:hidden;
+    margin: 1%;}
+    #merchandise ~ a, .notifs a {font-size:.8em; width:5em} 
+    .notifs h2 {font-size: 1em}
+    table h2 {font-size:1.3em}
+    table p {font-size:1em}
+    td h4 {width:6em;
+        font-size:.8em}
+    }
